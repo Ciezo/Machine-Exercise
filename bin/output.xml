@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210918 23:10:16.376" rpa="false" schemaversion="2">
+<suite id="s1" name="ME2" source="C:\Users\abcd1\Desktop\cvssecuya_bm5\ME2.robot">
+<test id="s1-t1" name="Start Game Application">
+<kw name="Start Application" library="RemoteSwingLibrary">
+<arg>my_app</arg>
+<arg>java -jar ME2.jar</arg>
+<doc>Starts the process in the ``command`` parameter  on the host operating system.
+        The given ``alias`` is stored to identify the started application in RemoteSwingLibrary.</doc>
+<msg timestamp="20210918 23:10:16.962" level="INFO" html="true">&lt;a href="C:\Users\abcd1\Desktop\cvssecuya_bm5\20210918231016.remoteswinglibrary.out"&gt;Link to stdout&lt;/a&gt;</msg>
+<msg timestamp="20210918 23:10:16.962" level="INFO" html="true">&lt;a href="C:\Users\abcd1\Desktop\cvssecuya_bm5\20210918231016.remoteswinglibrary.err"&gt;Link to stderr&lt;/a&gt;</msg>
+<msg timestamp="20210918 23:10:16.962" level="INFO">-javaagent:"C:\Users\abcd1\AppData\Local\Programs\Python\Python39\libs\remoteswinglibrary-2.3.0.jar"=127.0.0.1:50153</msg>
+<msg timestamp="20210918 23:10:16.962" level="INFO">Java version &gt; 9: True</msg>
+<msg timestamp="20210918 23:10:16.966" level="INFO">Starting process:
+java -jar ME2.jar</msg>
+<msg timestamp="20210918 23:10:20.015" level="INFO">connecting to started application at 127.0.0.1:49930</msg>
+<msg timestamp="20210918 23:10:20.015" level="INFO">waiting for api at 127.0.0.1:49930</msg>
+<msg timestamp="20210918 23:10:20.241" level="INFO">api is ready</msg>
+<msg timestamp="20210918 23:10:20.242" level="INFO">connected to started application at 127.0.0.1:49930</msg>
+<msg timestamp="20210918 23:10:20.242" level="INFO" html="true">&lt;b&gt;Messages by 'RemoteSwingLibrary registration server thread'&lt;/b&gt;</msg>
+<status status="PASS" starttime="20210918 23:10:16.961" endtime="20210918 23:10:20.243"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:16.960" endtime="20210918 23:10:20.244"/>
+</test>
+<test id="s1-t2" name="Select the main window">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:10:20.245" endtime="20210918 23:10:21.093"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:20.245" endtime="20210918 23:10:21.094"/>
+</test>
+<test id="s1-t3" name="1A Check if radio button A1 is selected">
+<kw name="Select From Main Menu" library="RemoteSwingLibrary">
+<arg>Options|Start Game</arg>
+<doc>Selects an item from the menu of the window that was opened first.
+Shortcut for:
+| `Select Window`    | 0 |
+| `Select From Menu` | Tools|Testing|MyTestTool |</doc>
+<status status="PASS" starttime="20210918 23:10:21.096" endtime="20210918 23:10:21.778"/>
+</kw>
+<kw name="Radio Button Should Be Selected" library="RemoteSwingLibrary">
+<arg>buttonA1</arg>
+<doc>Fails if radiobutton is not selected.</doc>
+<msg timestamp="20210918 23:10:21.816" level="INFO">Start Game! - GAMEEE!!!
+A1 selected
+Setting button PANELS to white!	 White Theme Setting Set!
+
+
+Setting radio BUTTONS to white!	 White Theme Setting Set!
+Resetting all buttons
+Reset Score~
+0</msg>
+<status status="PASS" starttime="20210918 23:10:21.779" endtime="20210918 23:10:21.816"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:21.095" endtime="20210918 23:10:21.819"/>
+</test>
+<test id="s1-t4" name="1B All radio buttons shall be visible">
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonA1</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.825" endtime="20210918 23:10:21.837"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonA2</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.841" endtime="20210918 23:10:21.849"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonA3</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.849" endtime="20210918 23:10:21.857"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonB1</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.858" endtime="20210918 23:10:21.865"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonB2</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.872" endtime="20210918 23:10:21.880"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonB3</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.881" endtime="20210918 23:10:21.888"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonC1</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.888" endtime="20210918 23:10:21.895"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonC2</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.896" endtime="20210918 23:10:21.904"/>
+</kw>
+<kw name="Component Should Be Visible" library="RemoteSwingLibrary">
+<arg>buttonC3</arg>
+<doc>Checks that component is visible.
+Even if one pixel of the component is visible, this keyword will pass.</doc>
+<status status="PASS" starttime="20210918 23:10:21.905" endtime="20210918 23:10:21.912"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:21.824" endtime="20210918 23:10:21.913"/>
+</test>
+<test id="s1-t5" name="1D Score shall be 0">
+<kw name="Label Text Should Be" library="RemoteSwingLibrary">
+<arg>scoreValue</arg>
+<arg>0</arg>
+<doc>Checks the equality of given text and the text displayed on a label.
+Assumes that the label exists in the current context.</doc>
+<status status="PASS" starttime="20210918 23:10:21.918" endtime="20210918 23:10:21.966"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:21.916" endtime="20210918 23:10:21.966"/>
+</test>
+<test id="s1-t6" name="2 Exit window when clicked submenu">
+<kw name="Ensure Application Should Close" library="RemoteSwingLibrary">
+<arg>5 seconds</arg>
+<arg>Select From Main Menu</arg>
+<arg>Options|Exit</arg>
+<doc> Runs the given keyword and waits until timeout for the application to close.
+        If the application doesn't close, the keyword will take a screenshot and close the application
+        and after that it will fail.
+        In many cases calling the keyword that will close the application under test brakes the remote connection.
+        This exception is ignored as it is expected by this keyword.
+        Other exceptions will fail this keyword as expected.</doc>
+<kw name="Select From Main Menu" library="RemoteSwingLibrary">
+<arg>Options|Exit</arg>
+<doc>Selects an item from the menu of the window that was opened first.
+Shortcut for:
+| `Select Window`    | 0 |
+| `Select From Menu` | Tools|Testing|MyTestTool |</doc>
+<status status="PASS" starttime="20210918 23:10:21.972" endtime="20210918 23:10:22.551"/>
+</kw>
+<msg timestamp="20210918 23:10:25.261" level="INFO">Connection died as expected</msg>
+<status status="PASS" starttime="20210918 23:10:21.970" endtime="20210918 23:10:25.261"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:21.968" endtime="20210918 23:10:25.262"/>
+</test>
+<test id="s1-t7" name="3 Pop up dialog should appear when user selects Options-&gt;Theme">
+<kw name="Start Application" library="RemoteSwingLibrary">
+<arg>my_app</arg>
+<arg>java -jar ME2.jar</arg>
+<doc>Starts the process in the ``command`` parameter  on the host operating system.
+        The given ``alias`` is stored to identify the started application in RemoteSwingLibrary.</doc>
+<msg timestamp="20210918 23:10:25.266" level="INFO" html="true">&lt;a href="C:\Users\abcd1\Desktop\cvssecuya_bm5\20210918231025.remoteswinglibrary.out"&gt;Link to stdout&lt;/a&gt;</msg>
+<msg timestamp="20210918 23:10:25.267" level="INFO" html="true">&lt;a href="C:\Users\abcd1\Desktop\cvssecuya_bm5\20210918231025.remoteswinglibrary.err"&gt;Link to stderr&lt;/a&gt;</msg>
+<msg timestamp="20210918 23:10:25.267" level="INFO">-javaagent:"C:\Users\abcd1\AppData\Local\Programs\Python\Python39\libs\remoteswinglibrary-2.3.0.jar"=127.0.0.1:50153</msg>
+<msg timestamp="20210918 23:10:25.267" level="INFO">Java version &gt; 9: True</msg>
+<msg timestamp="20210918 23:10:25.270" level="INFO">Starting process:
+java -jar ME2.jar</msg>
+<msg timestamp="20210918 23:10:27.982" level="INFO">connecting to started application at 127.0.0.1:52862</msg>
+<msg timestamp="20210918 23:10:27.982" level="INFO">waiting for api at 127.0.0.1:52862</msg>
+<msg timestamp="20210918 23:10:28.135" level="INFO">api is ready</msg>
+<msg timestamp="20210918 23:10:28.135" level="INFO">connected to started application at 127.0.0.1:52862</msg>
+<msg timestamp="20210918 23:10:28.135" level="INFO" html="true">&lt;b&gt;Messages by 'RemoteSwingLibrary registration server thread'&lt;/b&gt;</msg>
+<status status="PASS" starttime="20210918 23:10:25.266" endtime="20210918 23:10:28.136"/>
+</kw>
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:10:28.136" endtime="20210918 23:10:28.939"/>
+</kw>
+<kw name="Select From Menu And Wait" library="RemoteSwingLibrary">
+<arg>Options|Theme</arg>
+<doc>Selects an item from the menu of the currently selected window and waits for action to finish.
+This keyword will not work, for example, if the menu item opens a dialog.</doc>
+<msg timestamp="20210918 23:10:29.812" level="INFO">Theme option selected</msg>
+<status status="PASS" starttime="20210918 23:10:28.940" endtime="20210918 23:10:29.812"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:25.264" endtime="20210918 23:10:29.816"/>
+</test>
+<test id="s1-t8" name="3A The title of the dialog should be Theme">
+<kw name="Dialog Should Be Open" library="RemoteSwingLibrary">
+<arg>Theme</arg>
+<doc>Fails if the dialog is not open.</doc>
+<msg timestamp="20210918 23:10:39.883" level="FAIL">Dialog 'Theme' is not open</msg>
+<status status="FAIL" starttime="20210918 23:10:29.822" endtime="20210918 23:10:39.883"/>
+</kw>
+<kw name="Select Dialog" library="RemoteSwingLibrary">
+<arg>Theme</arg>
+<doc>Selects a dialog as current context and sets focus to it.</doc>
+<status status="NOT RUN" starttime="20210918 23:10:39.884" endtime="20210918 23:10:39.885"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:10:29.821" endtime="20210918 23:10:39.885">Dialog 'Theme' is not open</status>
+</test>
+<test id="s1-t9" name="3B There should be a combobox with the options Light and Dark">
+<kw name="Get Combobox Values" library="RemoteSwingLibrary">
+<var>${themes}</var>
+<arg>themeOptions</arg>
+<doc>Returns a list containing all the values of a combobox.</doc>
+<msg timestamp="20210918 23:10:49.944" level="FAIL">org.netbeans.jemmy.TimeoutExpiredException: Wait for "themeOptions" subcomponent to be displayed</msg>
+<status status="FAIL" starttime="20210918 23:10:39.888" endtime="20210918 23:10:49.944"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${themes}</arg>
+<arg>Light</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20210918 23:10:49.945" endtime="20210918 23:10:49.945"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${themes}</arg>
+<arg>Dark</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20210918 23:10:49.946" endtime="20210918 23:10:49.946"/>
+</kw>
+<kw name="Close Dialog" library="RemoteSwingLibrary">
+<arg>Theme</arg>
+<doc>Closes a dialog.</doc>
+<status status="NOT RUN" starttime="20210918 23:10:49.946" endtime="20210918 23:10:49.946"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:10:39.887" endtime="20210918 23:10:49.947">org.netbeans.jemmy.TimeoutExpiredException: Wait for "themeOptions" subcomponent to be displayed</status>
+</test>
+<test id="s1-t10" name="6. When a user clicks Help-&gt;How to play, a pop up window shall appear">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:10:49.949" endtime="20210918 23:10:49.970"/>
+</kw>
+<kw name="Select From Menu And Wait" library="RemoteSwingLibrary">
+<arg>Help|How to play</arg>
+<doc>Selects an item from the menu of the currently selected window and waits for action to finish.
+This keyword will not work, for example, if the menu item opens a dialog.</doc>
+<msg timestamp="20210918 23:10:50.616" level="INFO">Game Instructions....</msg>
+<status status="PASS" starttime="20210918 23:10:49.971" endtime="20210918 23:10:50.616"/>
+</kw>
+<status status="PASS" starttime="20210918 23:10:49.948" endtime="20210918 23:10:50.617"/>
+</test>
+<test id="s1-t11" name="6A. The title should be Game instructions">
+<kw name="Dialog Should Be Open" library="RemoteSwingLibrary">
+<arg>Game instructions</arg>
+<doc>Fails if the dialog is not open.</doc>
+<msg timestamp="20210918 23:11:00.641" level="FAIL">Dialog 'Game instructions' is not open</msg>
+<status status="FAIL" starttime="20210918 23:10:50.620" endtime="20210918 23:11:00.641"/>
+</kw>
+<kw name="Select Dialog" library="RemoteSwingLibrary">
+<arg>Game instructions</arg>
+<doc>Selects a dialog as current context and sets focus to it.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:00.642" endtime="20210918 23:11:00.642"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:10:50.619" endtime="20210918 23:11:00.643">Dialog 'Game instructions' is not open</status>
+</test>
+<test id="s1-t12" name="6B. The content as The user shall reach the end of the maze by using the arrow controls or mouse clicks.">
+<kw name="Component Should Exist" library="RemoteSwingLibrary">
+<arg>howToPlayLabel</arg>
+<doc>Fails if component does not exist within current context.
+You might want to set the waiting timeout with the keyword `Set Jemmy Timeout`</doc>
+<msg timestamp="20210918 23:11:10.662" level="FAIL">Component 'howToPlayLabel' does not exist</msg>
+<status status="FAIL" starttime="20210918 23:11:00.646" endtime="20210918 23:11:10.662"/>
+</kw>
+<kw name="Label Text Should Be" library="RemoteSwingLibrary">
+<arg>howToPlayLabel</arg>
+<arg>The user shall reach the end of the maze by using the arrow controls or mouse clicks.</arg>
+<doc>Checks the equality of given text and the text displayed on a label.
+Assumes that the label exists in the current context.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:10.663" endtime="20210918 23:11:10.663"/>
+</kw>
+<kw name="Close Dialog" library="RemoteSwingLibrary">
+<arg>Game instructions</arg>
+<doc>Closes a dialog.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:10.664" endtime="20210918 23:11:10.664"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:00.645" endtime="20210918 23:11:10.664">Component 'howToPlayLabel' does not exist</status>
+</test>
+<test id="s1-t13" name="7. When a user clicks Help-&gt;About this game, a pop up window">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:11:10.667" endtime="20210918 23:11:10.681"/>
+</kw>
+<kw name="Select From Menu And Wait" library="RemoteSwingLibrary">
+<arg>Help|About this game</arg>
+<doc>Selects an item from the menu of the currently selected window and waits for action to finish.
+This keyword will not work, for example, if the menu item opens a dialog.</doc>
+<msg timestamp="20210918 23:11:11.290" level="INFO">About....</msg>
+<status status="PASS" starttime="20210918 23:11:10.683" endtime="20210918 23:11:11.290"/>
+</kw>
+<status status="PASS" starttime="20210918 23:11:10.666" endtime="20210918 23:11:11.292"/>
+</test>
+<test id="s1-t14" name="7A. The title should be About">
+<kw name="Dialog Should Be Open" library="RemoteSwingLibrary">
+<arg>About</arg>
+<doc>Fails if the dialog is not open.</doc>
+<msg timestamp="20210918 23:11:21.310" level="FAIL">Dialog 'About' is not open</msg>
+<status status="FAIL" starttime="20210918 23:11:11.294" endtime="20210918 23:11:21.310"/>
+</kw>
+<kw name="Select Dialog" library="RemoteSwingLibrary">
+<arg>About</arg>
+<doc>Selects a dialog as current context and sets focus to it.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:21.312" endtime="20210918 23:11:21.312"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:11.293" endtime="20210918 23:11:21.313">Dialog 'About' is not open</status>
+</test>
+<test id="s1-t15" name="7B. The content should be A simple game with Action and Item Listeners.">
+<kw name="Component Should Exist" library="RemoteSwingLibrary">
+<arg>aboutLabel</arg>
+<doc>Fails if component does not exist within current context.
+You might want to set the waiting timeout with the keyword `Set Jemmy Timeout`</doc>
+<msg timestamp="20210918 23:11:31.334" level="FAIL">Component 'aboutLabel' does not exist</msg>
+<status status="FAIL" starttime="20210918 23:11:21.316" endtime="20210918 23:11:31.334"/>
+</kw>
+<kw name="Label Text Should Be" library="RemoteSwingLibrary">
+<arg>aboutLabel</arg>
+<arg>A simple game with Action and Item Listeners.</arg>
+<doc>Checks the equality of given text and the text displayed on a label.
+Assumes that the label exists in the current context.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:31.335" endtime="20210918 23:11:31.335"/>
+</kw>
+<kw name="Close Dialog" library="RemoteSwingLibrary">
+<arg>About</arg>
+<doc>Closes a dialog.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:31.336" endtime="20210918 23:11:31.336"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:21.315" endtime="20210918 23:11:31.336">Component 'aboutLabel' does not exist</status>
+</test>
+<test id="s1-t16" name="8. When a user clicks the left arrow button, the left radio button of the current one shall be selected.">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.339" endtime="20210918 23:11:31.362"/>
+</kw>
+<kw name="Push Radio Button" library="RemoteSwingLibrary">
+<arg>buttonA2</arg>
+<doc>Uses current context to search for a radiobutton and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.367" endtime="20210918 23:11:31.449"/>
+</kw>
+<kw name="Push Button" library="RemoteSwingLibrary">
+<arg>left</arg>
+<doc>Uses current context to search for a button and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.450" endtime="20210918 23:11:31.467"/>
+</kw>
+<kw name="Radio Button Should Be Selected" library="RemoteSwingLibrary">
+<arg>buttonA1</arg>
+<doc>Fails if radiobutton is not selected.</doc>
+<msg timestamp="20210918 23:11:31.483" level="FAIL">Radio Button 'buttonA1' is not selected.</msg>
+<status status="FAIL" starttime="20210918 23:11:31.468" endtime="20210918 23:11:31.483"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:31.338" endtime="20210918 23:11:31.485">Radio Button 'buttonA1' is not selected.</status>
+</test>
+<test id="s1-t17" name="9. When a user clicks the up arrow button, the top radio button of the current one shall be selected.">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.488" endtime="20210918 23:11:31.501"/>
+</kw>
+<kw name="Push Radio Button" library="RemoteSwingLibrary">
+<arg>buttonB1</arg>
+<doc>Uses current context to search for a radiobutton and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.502" endtime="20210918 23:11:31.529"/>
+</kw>
+<kw name="Push Button" library="RemoteSwingLibrary">
+<arg>up</arg>
+<doc>Uses current context to search for a button and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.530" endtime="20210918 23:11:31.548"/>
+</kw>
+<kw name="Radio Button Should Be Selected" library="RemoteSwingLibrary">
+<arg>buttonA1</arg>
+<doc>Fails if radiobutton is not selected.</doc>
+<msg timestamp="20210918 23:11:31.558" level="FAIL">Radio Button 'buttonA1' is not selected.</msg>
+<status status="FAIL" starttime="20210918 23:11:31.548" endtime="20210918 23:11:31.559"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:31.486" endtime="20210918 23:11:31.560">Radio Button 'buttonA1' is not selected.</status>
+</test>
+<test id="s1-t18" name="10. When a user clicks the down arrow button, the bottom radio button of the current one shall be selected.">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.564" endtime="20210918 23:11:31.573"/>
+</kw>
+<kw name="Push Radio Button" library="RemoteSwingLibrary">
+<arg>buttonA1</arg>
+<doc>Uses current context to search for a radiobutton and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.574" endtime="20210918 23:11:31.589"/>
+</kw>
+<kw name="Push Button" library="RemoteSwingLibrary">
+<arg>down</arg>
+<doc>Uses current context to search for a button and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.589" endtime="20210918 23:11:31.600"/>
+</kw>
+<kw name="Radio Button Should Be Selected" library="RemoteSwingLibrary">
+<arg>buttonB1</arg>
+<doc>Fails if radiobutton is not selected.</doc>
+<msg timestamp="20210918 23:11:31.612" level="FAIL">Radio Button 'buttonB1' is not selected.</msg>
+<status status="FAIL" starttime="20210918 23:11:31.600" endtime="20210918 23:11:31.612"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:31.563" endtime="20210918 23:11:31.613">Radio Button 'buttonB1' is not selected.</status>
+</test>
+<test id="s1-t19" name="11. When a user clicks the right arrow button, the right radio button of the current one shall be selected.">
+<kw name="Select Window" library="RemoteSwingLibrary">
+<arg>mainWindow</arg>
+<doc>Selects a window as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.618" endtime="20210918 23:11:31.627"/>
+</kw>
+<kw name="Push Radio Button" library="RemoteSwingLibrary">
+<arg>buttonA1</arg>
+<doc>Uses current context to search for a radiobutton and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.628" endtime="20210918 23:11:31.681"/>
+</kw>
+<kw name="Push Button" library="RemoteSwingLibrary">
+<arg>right</arg>
+<doc>Uses current context to search for a button and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:31.683" endtime="20210918 23:11:31.698"/>
+</kw>
+<kw name="Radio Button Should Be Selected" library="RemoteSwingLibrary">
+<arg>buttonA2</arg>
+<doc>Fails if radiobutton is not selected.</doc>
+<msg timestamp="20210918 23:11:31.717" level="FAIL">Radio Button 'buttonA2' is not selected.</msg>
+<status status="FAIL" starttime="20210918 23:11:31.699" endtime="20210918 23:11:31.718"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:31.616" endtime="20210918 23:11:31.721">Radio Button 'buttonA2' is not selected.</status>
+</test>
+<test id="s1-t20" name="12B. When the selected radio button changes, the score shall increment by 10">
+<kw name="Select From Main Menu" library="RemoteSwingLibrary">
+<arg>Options|Start Game</arg>
+<doc>Selects an item from the menu of the window that was opened first.
+Shortcut for:
+| `Select Window`    | 0 |
+| `Select From Menu` | Tools|Testing|MyTestTool |</doc>
+<status status="PASS" starttime="20210918 23:11:31.725" endtime="20210918 23:11:32.324"/>
+</kw>
+<kw name="Push Radio Button" library="RemoteSwingLibrary">
+<arg>buttonA2</arg>
+<doc>Uses current context to search for a radiobutton and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:32.325" endtime="20210918 23:11:32.348"/>
+</kw>
+<kw name="Label Text Should Be" library="RemoteSwingLibrary">
+<arg>scoreValue</arg>
+<arg>10</arg>
+<doc>Checks the equality of given text and the text displayed on a label.
+Assumes that the label exists in the current context.</doc>
+<msg timestamp="20210918 23:11:32.393" level="FAIL">Expected label 'scoreValue' value to be '10', but was '0'</msg>
+<status status="FAIL" starttime="20210918 23:11:32.350" endtime="20210918 23:11:32.393"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:31.724" endtime="20210918 23:11:32.397">Expected label 'scoreValue' value to be '10', but was '0'</status>
+</test>
+<test id="s1-t21" name="13. When the radio button in position C3 is reached, a pop-up dialog shall appear">
+<kw name="Push Radio Button" library="RemoteSwingLibrary">
+<arg>buttonC3</arg>
+<doc>Uses current context to search for a radiobutton and when found, pushes it.</doc>
+<status status="PASS" starttime="20210918 23:11:32.400" endtime="20210918 23:11:32.541"/>
+</kw>
+<status status="PASS" starttime="20210918 23:11:32.399" endtime="20210918 23:11:32.552"/>
+</test>
+<test id="s1-t22" name="13A. Title should be Congratulations">
+<kw name="Dialog Should Be Open" library="RemoteSwingLibrary">
+<arg>Congratulations</arg>
+<doc>Fails if the dialog is not open.</doc>
+<status status="PASS" starttime="20210918 23:11:32.556" endtime="20210918 23:11:32.570"/>
+</kw>
+<kw name="Select Dialog" library="RemoteSwingLibrary">
+<arg>Congratulations</arg>
+<doc>Selects a dialog as current context and sets focus to it.</doc>
+<status status="PASS" starttime="20210918 23:11:32.570" endtime="20210918 23:11:32.578"/>
+</kw>
+<status status="PASS" starttime="20210918 23:11:32.555" endtime="20210918 23:11:32.579"/>
+</test>
+<test id="s1-t23" name="13B. The content should be You Win!">
+<kw name="Component Should Exist" library="RemoteSwingLibrary">
+<arg>congratsLabel</arg>
+<doc>Fails if component does not exist within current context.
+You might want to set the waiting timeout with the keyword `Set Jemmy Timeout`</doc>
+<msg timestamp="20210918 23:11:42.594" level="FAIL">Component 'congratsLabel' does not exist</msg>
+<status status="FAIL" starttime="20210918 23:11:32.582" endtime="20210918 23:11:42.594"/>
+</kw>
+<kw name="Label Text Should Be" library="RemoteSwingLibrary">
+<arg>congratsLabel</arg>
+<arg>You Win!</arg>
+<doc>Checks the equality of given text and the text displayed on a label.
+Assumes that the label exists in the current context.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:42.596" endtime="20210918 23:11:42.596"/>
+</kw>
+<kw name="Close Dialog" library="RemoteSwingLibrary">
+<arg>Congratulations</arg>
+<doc>Closes a dialog.</doc>
+<status status="NOT RUN" starttime="20210918 23:11:42.596" endtime="20210918 23:11:42.596"/>
+</kw>
+<status status="FAIL" starttime="20210918 23:11:32.581" endtime="20210918 23:11:42.597">Component 'congratsLabel' does not exist</status>
+</test>
+<status status="FAIL" starttime="20210918 23:10:16.379" endtime="20210918 23:11:42.601"/>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="12" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="11" fail="12" skip="0" id="s1" name="ME2">ME2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

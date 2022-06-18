@@ -1,0 +1,216 @@
+
+        // Create a panel for the sidebar 
+        JPanel sidePanel = new JPanel(); 
+        sidePanel.setLayout(new BoxLayout(sidePanel, BoxLayout.Y_AXIS)); 
+        sidePanel.setBorder(BorderFactory.createLineBorder(Color.black));
+
+        // Create a series of row buttons at the side bar. 
+        // We use the JPanel to put them in the left side 
+        /**
+         * The side bar should have the following items in rows, and 
+         * presented as an instance of JButton ordinary.
+         *  System Summary 
+         *  Hardware Resources
+         *  Components 
+         *  Software Environment
+         */
+
+        JButton button;  
+        button = new JButton("System Summary");
+        button.setPreferredSize(new Dimension(20, 10));
+        sidePanel.add(button); 
+
+        button = new JButton("Hardware Resources"); 
+        button.setPreferredSize(new Dimension(20, 10));
+        sidePanel.add(button); 
+
+        button = new JButton("Components"); 
+        button.setPreferredSize(new Dimension(20, 10));
+        sidePanel.add(button); 
+
+        button = new JButton("Software Environment"); 
+        button.setPreferredSize(new Dimension(20, 10));
+        sidePanel.add(button); 
+
+        
+        // Fetch the instance of frame object
+        frame.getContentPane();
+        frame.getContentPane().add(sidePanel); 
+
+        // Display and activate the window
+        frame.pack();
+        frame.setVisible(true);
+
+
+
+
+
+
+
+
+
+
+
+        // Create a panel for the sidebar 
+        JPanel sidePanel = new JPanel(); 
+        sidePanel.setLayout(new BoxLayout(sidePanel, BoxLayout.Y_AXIS));  
+        sidePanel.setBorder(BorderFactory.createLineBorder(Color.black));
+
+        // Create another panel for the main content
+        // JPanel mainPanel = new JPanel(); 
+        // mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS)); 
+        // mainPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+
+        // Create a series of row buttons at the side bar. 
+        // We use the JPanel to put them in the left side 
+        /**
+         * The side bar should have the following items in rows, and 
+         * presented as an instance of JButton ordinary.
+         *  System Summary 
+         *  Hardware Resources
+         *  Components 
+         *  Software Environment
+         */
+        JButton button;  
+        button = new JButton("System  Summary");
+        sidePanel.add(button); 
+
+        button = new JButton("Hardware Resources");
+        sidePanel.add(button); 
+
+        button = new JButton("Components"); 
+        sidePanel.add(button); 
+
+        button = new JButton("Software Environment"); 
+        sidePanel.add(button); 
+
+        
+        // Fetch the instance of frame object
+        frame.getContentPane();
+        frame.getContentPane().add(sidePanel); 
+        // frame.getContentPane().add(mainPanel); 
+
+        // Display and activate the window
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+
+
+
+https://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html
+https://docs.oracle.com/javase/tutorial/uiswing/components/panel.html
+https://docs.oracle.com/javase/tutorial/uiswing/components/button.html
+https://docs.oracle.com/javase/tutorial/uiswing/components/index.html
+https://docs.oracle.com/javase/tutorial/uiswing/components/toplevel.html
+https://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html
+https://docs.oracle.com/javase/tutorial/uiswing/layout/box.html
+https://docs.oracle.com/javase/tutorial/uiswing/examples/layout/BoxLayoutDemoProject/src/layout/BoxLayoutDemo.java
+https://docs.oracle.com/cd/E50453_01/doc.80/e50452/run_java_guis.htm#NBDAG920
+https://docs.oracle.com/javase/tutorial/uiswing/components/splitpane.html
+https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html#ListDialog
+https://www.bing.com/search?q=how+to+resize+JPanel&qs=n&form=QBRE&sp=-1&pq=how+to+resize+jpanel&sc=1-20&sk=&cvid=F838BC54D33F43AEAAF520D6C1B52882
+https://stackoverflow.com/questions/27364098/how-to-resize-a-jpanel
+https://www.geeksforgeeks.org/java-swing-jpanel-examples/
+
+
+
+
+
+
+
+
+        // // 
+        // frame.setJMenuBar(menubar);  
+        // frame.getContentPane().setPreferredSize(dimension2);
+
+
+
+
+
+        // Create a panel for the sidebar 
+        JPanel sidePanel = new JPanel(); 
+        sidePanel.setOpaque(true);
+        sidePanel.setBackground(Color.white); 
+        sidePanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0)); 
+        sidePanel.setSize(new Dimension(100, 400));
+        sidePanel.setLayout(new BoxLayout(sidePanel, BoxLayout.Y_AXIS));  
+        sidePanel.setBorder(BorderFactory.createLineBorder(Color.black));
+
+        // Create another panel for the main content
+        // JPanel mainPanel = new JPanel();  
+        // mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS)); 
+        // mainPanel.setBorder(BorderFactory.createLineBorder(Color.black));
+
+        // Create a series of row buttons at the side bar. 
+        // We use the JPanel to put them in the left side 
+        /**
+         * The side bar should have the following items in rows, and 
+         * presented as an instance of JButton ordinary.
+         *  System Summary 
+         *  Hardware Resources
+         *  Components 
+         *  Software Environment
+         */
+        JButton button;  
+        button = new JButton("System  Summary");
+        sidePanel.add(button); 
+
+        button = new JButton("Hardware Resources");
+        sidePanel.add(button); 
+
+        button = new JButton("Components"); 
+        sidePanel.add(button); 
+
+        button = new JButton("Software Environment"); 
+        sidePanel.add(button); 
+
+        
+        // Fetch the instance of frame object
+        frame.getContentPane();
+        frame.getContentPane().add(sidePanel); 
+        // frame.getContentPane().add(mainPanel); 
+
+        // Display and activate the window
+        frame.pack();
+        frame.setVisible(true);
+    }
+    
+    private static void setPanelsDirection(Container pane) {
+        pane.add(sidePanel, BorderLayout.CENTER); 
+        // pane.add(mainPanel, BorderLayout.CENTER); 
+    }
+    
+    public static void main(String[] args) {
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                instanceOfGUI();
+            }
+        });
+    }
+}
+
+
+
+  // Create a series of row buttons at the side bar. 
+        // We use the JPanel to put them in the left side 
+        /**
+         * The side bar should have the following items in rows, and 
+         * presented as an instance of JButton ordinary.
+         *  System Summary 
+         *  Hardware Resources
+         *  Components 
+         *  Software Environment
+         */
+        JButton button;  
+        button = new JButton("System  Summary");
+        sidePanel.add(button); 
+
+        button = new JButton("Hardware Resources");
+        sidePanel.add(button); 
+
+        button = new JButton("Components"); 
+        sidePanel.add(button); 
+
+        button = new JButton("Software Environment"); 
+        sidePanel.add(button); 

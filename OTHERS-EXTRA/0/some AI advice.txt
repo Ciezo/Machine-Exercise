@@ -1,0 +1,11 @@
+So I'd really recommend making sure that, first of all, you are passionate about technology itself. If you are, continue, learn about programming, learn about coding, learn how to actually speak the computer's language. Learn about the computational thinking behind code. And then go ahead and learn about machine learning from the very, very basics. Start off with an API like IBM Watson to help you get an idea of what it's capable of. Then move on to more advanced, custom techniques and the math behind them. 
+
+Learn how to code in languages like Python, Julia as a new language, SWIFT because of the new SWIFT for TensorFlow project.
+
+python, practice R, my data analysis skills through programming
+
+ So I created a portfolio of different online assignment exercises projects to demonstrate that I could do the kinds of things that they were hoping that I could do to show my competency.
+
+ maybe even form some connections that might be meaningful in your career as well
+
+hose are the four things. Number one is, acquire skills, wherever you can. Always be open to learning new things and new skills. Number two is demonstrate your capabilities through projects, exercises. Something that you can share online. Even blog posts and articles. Number three, if you can teach at meet ups or maybe even more ideally conferences, so you can demonstrate your competencies in public. Then number four is going to be try to connect with local experts or local specialists who are already in the field so you can get a better sense, what that career kind of road map might look like for you. 

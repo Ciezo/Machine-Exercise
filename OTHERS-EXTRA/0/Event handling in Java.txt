@@ -1,0 +1,51 @@
+Event handling in Java
+Introduction to Event listeners
+Let us talk about events in java 
+event delegation object
+
+fucking review the event handling in java via different sources 
+fucking do your best!
+
+
+on assignment 1 on cs128-lec 
+6. adapter
+
+
+Sept 4 
+event listeners 
+event actionlistener
+
+in implementing actionlistener 
+we have to override a method namely, public void actionPerformed
+we really have to add some actions inside this method when we implement and use
+actionlistener 
+
+New machine exercise
+Deadline Sept 10 
+output is java file 
+    with format: SurnameGridGame.java 
+send to: Blackboard
+
+we now build with the functionality part 
+read other people's code 
+implement use cases 
+practice code testing with remote swing library 
+    use the robot files and robot framework
+    use the robot script test sent by prof 
+    use the fucking test script
+implement action listeners 
+implement item listeners
+create a new java class containing the implementation 
+just the fucking java file to be sent 
+read the instructions for the exercise on the link 
+    especially the avbout the game 
+we use the ME2.java with the UI components 
+focus on the item listeners 
+the radio buttons are static 
+
+when you select the theme for black the panles should be black where radio buttons are 
+assume the player will not go out of boundaries where there are no radio buttons 
+you can ask the instructor 
+submit only one java file 
+the recording will be available today just wait for a few fucking hours 
+    link will be sent on the cloud by prof once it is available  

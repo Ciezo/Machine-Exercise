@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "ME1",
+        "ME2/cvssecuya_bm5",
+        "ME3",
+        "ME4",
+        "ME5",
+        "ME6"
+    ],
+
+    "java.project.outputPath": "bin"
+}

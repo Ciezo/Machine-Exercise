@@ -1,0 +1,4 @@
+https://www.google.com/search?q=how+to+host+html+in+ibm+cloud&oq=how+to+host+html+in+ibm+cloud&aqs=chrome..69i57.8192j0j1&sourceid=chrome&ie=UTF-8
+https://developer.ibm.com/tutorials/cl-deploy-a-hello-world-webpage-to-bluemix-app/
+https://stackoverflow.com/questions/49002221/hosting-an-html-css-js-website-on-ibm-cloud
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_do_you_host_your_website_on_Google_App_Engine
